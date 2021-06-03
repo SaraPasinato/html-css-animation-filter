@@ -134,7 +134,6 @@
         transform: rotate(0deg);
     }
 }
-/*--------- es 12 ----------------*/
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -163,4 +162,24 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+/*--------- es 12 ----------------*/
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: split-to-left 4s  alternate;
+}
+@keyframes split-to-left{
+    /* initial position */
+    0%{
+        right: 20%;
+    }
+    /* split to x positon - width */
+    50%{
+        right: calc(100% - 60px);
+    }
+    
+    /* returned to initial positon */
+    100%{
+        right: 20%;
+    }
 }

@@ -59,11 +59,24 @@
 }
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
-    transition: 2s;
+   
 }
 /*--------- es 6 ----------------*/
+.ex-6-img{
+    transition: 2s;
+}
 .ex-6-img:hover{
     filter: grayscale(1);
+}
+.ex-6-img:active{
+    filter: grayscale(0.5);
+}
+/*--------- es 7 ----------------*/
+.ex-7-img{
+    transition: 3s;
+}
+.ex-7-img:hover{
+    filter: grayscale(2) sepia(1) ;
 }
 
 .ex-9-img {

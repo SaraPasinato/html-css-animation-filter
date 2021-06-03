@@ -87,9 +87,18 @@
     filter: grayscale(1) sepia(0.8) ;
     border-radius: 20px;
 }
+/*--------- es 9 ----------------*/
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 3s;
+}
+
+.ex-9-img:hover{
+    filter: grayscale(1) sepia(0.8) ;
+    border-radius: 20px;
+    transform:scale(1.50) ;
+
 }
 .ex-10-icon {
     font-size: 60px;

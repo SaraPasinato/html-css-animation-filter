@@ -183,3 +183,22 @@
         right: 20%;
     }
 }
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: split-to-right 4s  alternate;
+}
+@keyframes split-to-right{
+    /* initial position */
+    0%{
+        left: 20%;
+    }
+    /* split to x positon - width */
+    50%{
+        left: calc(100% - 60px);
+    }
+    
+    /* returned to initial positon */
+    100%{
+        left: 20%;
+    }
+}

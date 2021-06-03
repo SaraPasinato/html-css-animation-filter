@@ -239,3 +239,39 @@
         bottom: -10px;
     }
 }
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: split-to-right-loop 4s  linear;
+}
+@keyframes split-to-right-loop{
+    /* initial position right and bottom*/
+    0%{
+        left: 20%;
+        top: -10px;
+    }
+    /* split to x positon - width */
+    20%{
+        left: calc(100% - 60px);
+        top: -10px;
+    }
+     /* split to half x positon - width */
+    40%{
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    /* now moving in the opposite position (reverse values)*/
+    60%{
+        left: 0;
+        top:100%;
+    }
+     /* split to half reverse x positon - width */
+    80%{
+        left: -20px;
+        top: -10px
+    }
+     /* returned to initial positon */
+    100%{
+        left: 20%;
+        top: -10px;
+    }
+}

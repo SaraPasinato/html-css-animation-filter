@@ -110,13 +110,29 @@
     transform: rotate(1turn);
    }
    to{
-       
+
    }
 }
 
 /*--------- es 11 ----------------*/
 .ex-11-icon {
     font-size: 60px;
+}
+
+.ex-11-icon:hover{
+    animation: spin-bounce 2s linear;
+}
+
+@keyframes spin-bounce{
+    0%{
+        transform:rotate(0deg);
+    }
+    90%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 /*--------- es 12 ----------------*/
 .ex-12-button, .ex-13-button {

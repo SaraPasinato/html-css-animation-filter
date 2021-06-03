@@ -202,3 +202,40 @@
         left: 20%;
     }
 }
+
+/*--------- es 13 ----------------*/
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: split-to-left-loop 4s  linear;
+}
+@keyframes split-to-left-loop{
+    /* initial position right and bottom*/
+    0%{
+        right: 20%;
+        bottom: -10px;
+    }
+    /* split to x positon - width */
+    20%{
+        right: calc(100% - 60px);
+        bottom: -10px;
+    }
+     /* split to half x positon - width */
+    40%{
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    /* now moving in the opposite position (reverse values)*/
+    60%{
+        right: 0;
+        bottom:100%;
+    }
+     /* split to half reverse x positon - width */
+    80%{
+        right: -20px;
+        bottom: -10px
+    }
+     /* returned to initial positon */
+    100%{
+        right: 20%;
+        bottom: -10px;
+    }
+}
